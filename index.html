@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+#video-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#video-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+#video-section ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#video-section ul li a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#mcq-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mcq {
+    display: flex;
+    flex-direction: column;
+}
+
+.mcq label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Teacher Training Program Group B: Enhancing Digital Teaching Skills</h1>
+    </header>
+
+    <main>
+        <section id="video-section">
+            <h2>Learning Videos</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=IKR1qLzpODo" target="_blank">Explore and utilize digital content from learning sites (e.g., MOE CDC, e-pustakalaya)</a></li>
+                <li><a href="https://example.com/video2" target="_blank">Learning Video 2</a></li>
+            </ul>
+        </section>
+
+        <section id="interaction-section">
+            <h2>Live Interaction</h2>
+            <p>Teachers and participants can join the live session here:</p>
+            <p> Live session sarts in 6 pm to 7 pm</p>
+
+            <button id="join-session" onclick="joinZoomSession()">Join Live Session</button>
+
+            <script>
+            function joinZoomSession() {
+                window.location.href = "https://meet.google.com/myy-pppc-qfh"; // Replace with your Zoom link
+            }
+            </script>
+
+        </section>
+
+        <section id="mcq-section">
+            <h2>Multiple Choice Questions</h2>
+            <form id="mcq-form">
+                <div class="mcq">
+                    <label for="question1">Question 1: What is 2 + 2?</label>
+                    <input type="text" id="question1" name="question1" value="4">
+                </div>
+                <div class="mcq">
+                    <label for="question2">Question 2: Which planet is known as the Red Planet?</label>
+                    <input type="text" id="question2" name="question2" value="Mars">
+                </div>
+                <button type="button" id="edit-mcq">Edit MCQs</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive LMS Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
